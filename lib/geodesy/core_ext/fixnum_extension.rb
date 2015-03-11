@@ -1,7 +1,7 @@
 require_relative 'distance_conversions'
 
-module FloatExtension
-  refine Float do
+module FixnumExtension
+  refine Fixnum do
     include ::Geodesy::DistanceConversions
   end
 end

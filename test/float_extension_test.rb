@@ -24,6 +24,7 @@ class Point
 
 end
 
+
 class FloatExtensionTest < Minitest::Test
   def point
     @point ||= Point.new([33.26926373135873, -117.2871651469912])

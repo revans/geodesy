@@ -1,6 +1,7 @@
 require "geodesy/version"
 require 'geodesy/conversions'
 require 'geodesy/core_ext/float_extension'
+require 'geodesy/core_ext/fixnum_extension'
 require 'geodesy/coordinates'
 require 'geodesy/bearing'
 require 'geodesy/destination'
