@@ -19,22 +19,25 @@ module Geodesy
         self
 
       when 'miles'
-        self * 0.621371
+        self * 1.60934
 
       when 'meters'
-        self * 1000.0
+        self * 0.001
 
       when 'yards'
-        self * 1093.61
+        self * 0.0009144
 
       when 'feet'
-        self * 3280.84
+        self * 0.0003048
 
       when 'inches'
-        self * 39370.1
+        self * 2.54e-5
 
       when 'centimeters'
-        self * 100000.0
+        self * 1e-5
+
+      when 'millimeters'
+        self * 1e-6
 
       end
     end
@@ -42,25 +45,28 @@ module Geodesy
     def to_miles(unit)
       case unit
       when 'kilometers'
-        self * 1.60934
+        self * 0.621371
 
       when 'miles'
         self
 
       when 'meters'
-        self * 1609.34
+        self * 0.000621371
 
       when 'yards'
-        self * 1760.0
+        self * 0.000568182
 
       when 'feet'
-        self * 5280.0
+        self * 0.000189394
 
       when 'inches'
-        self * 63360.0
+        self * 1.5783e-5
 
       when 'centimeters'
-        self * 160934.0
+        self * 6.21371e-6
+
+      when 'millimeters'
+        self * 6.2137e-7
 
       end
     end
@@ -68,25 +74,28 @@ module Geodesy
     def to_meters(unit)
       case unit
       when 'kilometers'
-        self * 0.001
+        self * 1000
 
       when 'miles'
-        self * 0.000621371
+        self * 1609.34
 
       when 'meters'
         self
 
       when 'yards'
-        self * 1.09361
+        self * 0.9144
 
       when 'feet'
-        self * 3.28084
+        self * 0.3048
 
       when 'inches'
-        self * 39.3701
+        self * 0.0254
 
       when 'centimeters'
-        self * 100
+        self * 0.01
+
+      when 'millimeters'
+        self * 0.001
 
       end
     end
@@ -94,25 +103,28 @@ module Geodesy
     def to_yards(unit)
       case unit
       when 'kilometers'
-        self * 0.0009144
+        self * 1093.61
 
       when 'miles'
-        self * 0.000568182
+        self * 1760
 
       when 'meters'
-        self * 1760.0
+        self * 1.09361
 
       when 'yards'
         self
 
       when 'feet'
-        self * 3
+        self * 0.333333
 
       when 'inches'
-        self * 36
+        self * 0.0277778
 
       when 'centimeters'
-        self * 91.44
+        self * 0.0109361
+
+      when 'millimeters'
+        self * 0.00109361
 
       end
     end
@@ -120,25 +132,29 @@ module Geodesy
     def to_feet(unit)
       case unit
       when 'kilometers'
-        self * 0.0003048
+        self * 3280.84
 
       when 'miles'
-        self * 0.000189394
+        self * 5280
 
       when 'meters'
-        self * 0.3048
+        self * 3.28084
 
       when 'yards'
-        self * 0.333333
+        self * 3
 
       when 'feet'
         self
 
       when 'inches'
-        self * 12
+        self * 0.0833333
 
       when 'centimeters'
-        self * 30.48
+        self * 0.0328084
+
+      when 'millimeters'
+        self * 0.00328084
+
 
       end
     end
@@ -146,25 +162,28 @@ module Geodesy
     def to_inches(unit)
       case unit
       when 'kilometers'
-        self * 2.54e-5
+        self * 39370.1
 
       when 'miles'
-        self * 1.5783e-5
+        self * 63360
 
       when 'meters'
-        self * 0.0254
+        self * 39.3701
 
       when 'yards'
-        self * 0.0277778
+        self * 36
 
       when 'feet'
-        self * 0.0833333
+        self * 12
 
       when 'inches'
         self
 
       when 'centimeters'
-        self * 2.54
+        self * 0.393701
+
+      when 'millimeters'
+        self * 0.0393701
 
       end
     end
@@ -173,25 +192,28 @@ module Geodesy
     def to_centimeters(unit)
       case unit
       when 'kilometers'
-        self * 1e-5
+        self * 100000
 
       when 'miles'
-        self * 6.2137e-6
+        self * 160934
 
       when 'meters'
-        self * 0.01
+        self * 100
 
       when 'yards'
-        self * 0.0109361
+        self * 91.44
 
       when 'feet'
-        self * 0.0328084
+        self * 30.48
 
       when 'inches'
-        self * 0.393701
+        self * 2.54
 
       when 'centimeters'
         self
+
+      when 'millimeters'
+        self * 0.1
 
       end
     end
